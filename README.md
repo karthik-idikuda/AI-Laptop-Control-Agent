@@ -1,76 +1,146 @@
-<div align="center">
+# AgentOS — Vision-First Autonomous Desktop Agent
 
-![Header](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDgwMCAyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmIxMDU1IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzc1OTdkZSIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmIxYjU0IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9Imdsb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI2IiByZXN1bHQ9ImJsdXIiIC8+CiAgICAgIDxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJibHVyIiBvcGVyYXRvcj0ib3ZlciIgLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiByeD0iMTUiIHJ5PSIxNSIvPgogIAogIDx0ZXh0IHg9IjUwJSIgeT0iNDUlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmb250LXNpemU9IjQ2IiBmaWxsPSIjZmZhYTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWx0ZXI9InVybCgjZ2xvdykiIHN0eWxlPSJ0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOyBsZXR0ZXItc3BhY2luZzogNXB4OyI+CiAgICBBSSBMYXB0b3AgQ29udHJvbCBBZ2VuLi4uCiAgPC90ZXh0PgogIAogIDx0ZXh0IHg9IjUwJSIgeT0iNzAlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHN0eWxlPSJsZXR0ZXItc3BhY2luZzogM3B4OyBvcGFjaXR5OiAwLjg7Ij4KICAgIFBST1BSSUVUQVJZIFBZVEhPTiBURUNITk9MT0dZCiAgPC90ZXh0PgoKICA8IS0tIEFuaW1hdGVkIGVsZW1lbnRzIC0tPgogIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iNCIgZmlsbD0iI2ZmYWEwMCIgZmlsdGVyPSJ1cmwoI2dsb3cpIj4KICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImN4IiB2YWx1ZXM9IjE1MDsgNjUwOyAxNTAiIGR1cj0iN3MiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPgogIDwvY2lyY2xlPgogIDxjaXJjbGUgY3g9IjY1MCIgY3k9IjUwIiByPSIzIiBmaWxsPSIjZmZhYTAwIiBmaWx0ZXI9InVybCgjZ2xvdykiPgogICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iY3giIHZhbHVlcz0iNjUwOyAxNTA7IDY1MCIgZHVyPSI3cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIC8+CiAgPC9jaXJjbGU+Cjwvc3ZnPg==)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Status](https://img.shields.io/badge/status-Pre--Alpha-orange)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey)
 
-<br/>
+**AgentOS** is a next-generation autonomous desktop agent that perceives your screen, plans complex multi-step tasks, and executes them across applications using a combination of vision (VLM) and native accessibility APIs.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-Python-ffaa00?style=for-the-badge&logo=probot&logoColor=black" alt="Language" />
-  <img src="https://img.shields.io/badge/Files-216-7597de?style=for-the-badge&logo=files&logoColor=ffaa00" alt="Files" />
-  <img src="https://img.shields.io/badge/License-PROPRIETARY-ff0000?style=for-the-badge&logo=law&logoColor=white" alt="License" />
-</p>
-
-*Exclusive Neural & Cognitive Architecture developed by Karthik Idikuda.*
-
-</div>
+> **Note**: This project is currently in active development. It uses **100% free, open-source tools** (Llama 3.2, LLaVA, Tesseract, Playwright) and runs locally to ensure privacy.
 
 ---
 
-## Technical Synopsis
+## 🧠 Core Philosophy
 
-> Vision-language agent for autonomous laptop control.
+1.  **Vision-First Perception**: Uses Vision-Language Models (VLM) to "see" the screen like a human, robust to UI changes.
+2.  **Hybrid Control**: Combines native OS accessibility APIs (UIA/AX) for reliability with vision-based fallback.
+3.  **Planner-Executor-Reflect**: Decomposes high-level goals into atomic steps, executes them, and reflects on failures to retry.
+4.  **Sandboxed Safety**: Runs potentially dangerous operations with human-in-the-loop confirmation and strict safety boundaries.
 
-Welcome to **AI Laptop Control Agent**. This repository contains proprietary source code engineered by Karthik Idikuda. The architecture leverages deep integration techniques tailored specifically for this project's requirements, heavily optimized for execution efficiency.
+---
 
-<br/>
+## 🏗 Architecture
 
-## Internal System Engineering
-
-The internal blueprint below dynamically represents the specific components and data execution flow identified within this repository.
+AgentOS follows a modular multi-agent architecture:
 
 ```mermaid
-graph TD;
-    A[Data Ingestion] -->|Raw Data| B(Preprocessing Pipeline);
-    B --> C{Model Training & Inference};
-    C -->|Predictions| D[Analytics Dashboard];
-    C -.->|Weights & Biases| E[(Model Registry)];
+graph TD
+    User["User Goal"] --> Host["HostAgent (Orchestrator)"]
     
-    classDef primary fill:#0f2027,stroke:#ff007f,stroke-width:2px,color:#fff;
-    classDef secondary fill:#203a43,stroke:#b0bec5,stroke-width:1px,color:#fff;
-    classDef database fill:#2c5364,stroke:#ff007f,stroke-width:2px,color:#fff;
+    subgraph PerceptionLayer ["Perception Layer"]
+        Screen["Screenshot"] --> VLM["LlaVA / Vision Model"]
+        Screen --> OCR["Tesseract OCR"]
+        Screen --> UIA["Native Accessibility API"]
+    end
     
-    class A,D primary;
-    class B,C secondary;
-    class E database;
+    Host -->|Query| VLM
+    VLM -->|Context| Host
+    
+    Host -->|Delegate| Browser["Browser Agent"]
+    Host -->|Delegate| Files["File Explorer Agent"]
+    
+    subgraph AppAgents ["AppAgents"]
+        Browser
+        Files
+        Term["Terminal Agent"]
+        Office["Office/Email Agent"]
+    end
+    
+    Browser -->|Actions| Actuator["Action Grounder"]
+    Files -->|Actions| Actuator
+    Actuator -->|Input| OS["Operating System"]
+    
+    OS -->|Feedback| Screen
 ```
 
-<br/>
+### Components
 
-## Proprietary Specifications
-
-| Attribute | Implementation Detail |
-|:---|:---|
-| **Core Technology** | `Python` |
-| **System Scale** | `216 Identifiable Resource Nodes` |
-| **Execution Tier** | `High-Performance / Latency Optimized` |
-| **Intellectual Property** | `Strictly Confidential & Proprietary` |
-
-<br/>
-
-## ⚠️ STRICT LEGAL WARNING & LICENSE
-
-**PROPRIETARY AND CONFIDENTIAL**
-
-This software and all associated documentation are the exclusive property of **Karthik Idikuda**. 
-
-- **NO PERMISSION IS GRANTED** to use, copy, modify, merge, publish, distribute, sublicense, or sell copies of this software without explicit, written consent from the author.
-- **UNAUTHORIZED USE WILL RESULT IN SEVERE LEGAL ACTION.** Any individual or organization found using, referencing, or deploying this code without paying the required licensing fees will face immediate litigation, financial penalties, and potentially criminal prosecution ("jail time") where applicable by law.
-- **TO OBTAIN A LEGAL LICENSE**, you must directly contact Karthik Idikuda to negotiate payment terms.
-
-*By viewing this repository, you agree to these strict proprietary terms.*
+-   **Perception Layer**: Combines `LLaVA` (via Ollama) for semantic understanding, `Tesseract` for OCR, and `OpenCV` for element detection.
+-   **HostAgent**: The brain (powered by `Llama 3.2`) that decomposes natural language commands into structured plans.
+-   **AppAgents**: Specialized micro-agents for specific domains (Browser, Files, Terminal, Email).
+-   **Actuator**: A safety-enforced layer that translates semantic actions into OS-level inputs (using `pyautogui`, `PyObjC`).
 
 ---
-<div align="center">
-  <br/>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=20&pause=1000&color=ffaa00&center=true&vCenter=true&width=535&lines=Engineered+by+Karthik+Idikuda;Strictly+Proprietary+Technology;Unauthorized+Use+Prohibited" alt="Typing SVG" />
-</div>
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+-   **Python 3.10+**
+-   **Ollama**: For running local LLMs and VLMs.
+    -   Install Ollama: [ollama.com](https://ollama.com)
+    -   Pull required models:
+        ```bash
+        ollama pull llava:13b      # Vision
+        ollama pull llama3.2       # Planning
+        ```
+-   **Tesseract OCR**:
+    -   macOS: `brew install tesseract`
+    -   Windows: Install via binary installer.
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Nytrynox/AI-Laptop-Control-Agent.git
+    cd AI-Laptop-Control-Agent
+    ```
+
+2.  Create a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Windows: venv\Scripts\activate
+    ```
+
+3.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+---
+
+## 💻 Usage
+
+Start the AgentOS CLI:
+
+```bash
+python -m agentos.cli
+```
+
+### Example Commands
+
+**1. Research & Summarize**
+> "Go to TechCrunch, find the latest article about AI, and save a summary to my Desktop."
+
+**2. File Management**
+> "Find all PDF files in Downloads created last week and move them to a new folder called 'Weekly Reports'."
+
+**3. Cross-App Workflow**
+> "Download the attachment from the latest email from 'Boss', convert it to CSV, and upload it to our internal dashboard."
+
+---
+
+## 🛡 Safety & Privacy
+
+-   **Local Execution**: All inference runs locally on your machine. No screen data is sent to the cloud.
+-   **Confirmation**: Destructive actions (delete, overwrite, send email) require explicit user confirmation.
+-   **Audit Log**: Every action, screenshot, and decision is logged for review.
+
+---
+
+## 🗺 Roadmap
+
+-   [ ] **Phase 1: MVP** - Basic perception, HostAgent, and Browser/File agents.
+-   [ ] **Phase 2: Robustness** - Improved error recovery, hybrid UIA+Vision.
+-   [ ] **Phase 3: Scale** - API exposure, more AppAgents, full CLI.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read `CONTRIBUTING.md` (coming soon) for details on our code of conduct and the process for submitting pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
